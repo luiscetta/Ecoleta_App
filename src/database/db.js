@@ -7,10 +7,10 @@ const db = new sqlite3.Database("./src/database/database.db")
 module.exports = db
 
 // utilizar o obj de banco de dados para nossas operações
-/* db.serialize(() => {
+ /*  db.serialize(() => {
 
     // criar uma tabela com comandos SQL
-    db.run(`
+   db.run(`
       CREATE TABLE IF NOT EXISTS places (
          id INTEGER PRIMARY KEY AUTOINCREMENT,
          image TEXT,
@@ -56,7 +56,7 @@ module.exports = db
         console.log(this)
       }
 
-     db.run(query, values,afterInsertData) 
+     db.run(query, values,afterInsertData)
 
      // consultar os dados da  tabela
     db.all(`SELECT * FROM places`, function(err, rows){
@@ -65,16 +65,16 @@ module.exports = db
         }
 
         console.log("Aqui estão seus registros")
-        console.log(rows)
-    })  
+        console.log(rows) 
+    })   
    
 
-     // deletar um dado da tabela
-    db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) {
+  // deletar um dado da tabela
+     db.run(`DELETE FROM places WHERE id = ?`, [20], function(err) {
        if(err) {
             return console.log(err)
         }  
 
         console.log("Registro deletado com sucesso!")
     })
-  }) */
+}) */
